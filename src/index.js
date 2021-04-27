@@ -3,18 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MediaCard from './components/Card';
-import ButtonIngresar from './components/ButtonIngresar';
-import ButtonRegistrarse from './components/ButtonRegistrarse';
-import ButtonAyuda from './components/ButtonAyuda';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './theme';
+import InputWithIcon from './components/InputDni';
+
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <ButtonAyuda/>
+   <ThemeProvider theme= {theme}>
+    <InputWithIcon /> 
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();

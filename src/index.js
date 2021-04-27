@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import MediaCard from './components/Card';
+import ButtonIngresar from './components/ButtonIngresar';
+import ButtonRegistrarse from './components/ButtonRegistrarse';
+import ButtonAyuda from './components/ButtonAyuda';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ButtonAyuda/>
   </React.StrictMode>,
   document.getElementById('root')
 );

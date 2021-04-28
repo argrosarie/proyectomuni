@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function InputWithIcon() {
+export default function InputDni() {
   const classes = useStyles();
 
   return (

@@ -7,6 +7,11 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import InputDni from './InputDni';
+import InputPw from './InputPw';
+import ButtonIngresar from './ButtonIngresar';
+import ButtonRegistrarse from './ButtonRegistrarse';
+import ButtonAyuda from './ButtonAyuda';
 
 const useStyles = makeStyles({
   root: {
@@ -27,23 +32,14 @@ export default function MediaCard() {
              Portal de <strong>Datos Abiertos</strong>
         </CardContent>
         <CardContent>
-          <Button>BOTON</Button>
+          <InputDni />
+          <InputPw />
+          <ButtonIngresar /> <br />
+          <ButtonRegistrarse /><ButtonAyuda />
+         
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-
-        
-
-
-
-
+    
     </Card>
   );
 }

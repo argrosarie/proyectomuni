@@ -59,7 +59,7 @@ export default function InputPw() {
        
        <Grid align="center">
         <FormControl className={clsx(classes.margin, classes.textField)} variant="filled">
-          <InputLabel htmlFor="filled-adornment-password">Contraseña</InputLabel>
+          <InputLabel htmlFor="filled-adornment-password" fullWidth>Contraseña</InputLabel>
           <FilledInput
             id="filled-adornment-password"
             type={values.showPassword ? 'text' : 'password'}

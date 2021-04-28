@@ -12,7 +12,7 @@ function ButtonIngresar() {
         <Grid 
         //item xs={12}
         >
-      <Button variant="contained"  color="secondary" size="medium"
+      <Button variant="contained"  color="secondary" size="medium" fullWidth
       >Ingresar</Button>
         </Grid>
       {/* </Grid> */}

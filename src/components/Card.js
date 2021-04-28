@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     maxWidth: 450,
   },
   media: {
-    height: 140,
+    height: 500,
   },
  
 });
@@ -34,7 +34,7 @@ export default function MediaCard() {
       
       <CardActionArea>
         <CardContent style={{backgroundColor: "#2979ff"}} >
-        <Typography color='grey[500]' fontWeight={900} fontSize={24}>Portal de <strong>Datos Abiertos</strong></Typography>
+        <Typography color='grey[500]' fontWeight={900} fontSize={50}>Portal de <strong>Datos Abiertos</strong></Typography>
         </CardContent>
         <CardContent>
         <Grid container alignItems="center">

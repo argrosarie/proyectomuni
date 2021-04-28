@@ -1,10 +1,16 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+
+
 
 function ButtonRegistrarse() {
     return (
-      <Button variant="contained"  color="primary">Registrarse</Button>
+      <Grid align="center">
+      <Button variant="contained"  color="primary" size="medium">
+        Registrarse
+      </Button>
+      </Grid>
     );
   }
 

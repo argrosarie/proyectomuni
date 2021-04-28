@@ -12,34 +12,51 @@ import InputPw from './InputPw';
 import ButtonIngresar from './ButtonIngresar';
 import ButtonRegistrarse from './ButtonRegistrarse';
 import ButtonAyuda from './ButtonAyuda';
+import ButtonAyuda2 from './ButtonAyuda2';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 450,
   },
   media: {
     height: 140,
   },
+ 
 });
 
 export default function MediaCard() {
   const classes = useStyles();
 
   return (
+    
     <Card className={classes.root}>
+      
       <CardActionArea>
         <CardContent style={{backgroundColor: "#2979ff"}} >
-             Portal de <strong>Datos Abiertos</strong>
+        <Typography color='grey[500]' fontWeight={900} fontSize={24}>Portal de <strong>Datos Abiertos</strong></Typography>
         </CardContent>
         <CardContent>
-          <InputDni />
-          <InputPw />
-          <ButtonIngresar /> <br />
-          <ButtonRegistrarse /><ButtonAyuda />
-         
+        <Grid container alignItems="center">
+          <Grid item><InputDni /></Grid>
+          <Grid item><InputPw /></Grid>
+          </Grid>
+
+          <br /><Grid item xs={12} ><ButtonIngresar /> </Grid><br />
+
+          <Grid container alignItems="center">
+          <Grid item item xs={12} sm={6}><ButtonRegistrarse /></Grid> <Grid item item xs={12} sm={6}><ButtonAyuda2 /></Grid>
+          </Grid>
+
         </CardContent>
       </CardActionArea>
     
+
+        
+
+
+
+
     </Card>
   );
 }

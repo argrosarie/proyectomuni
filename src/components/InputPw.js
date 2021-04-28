@@ -12,6 +12,7 @@ import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,7 +57,7 @@ export default function InputPw() {
       
       <div>
        
-       
+       <Grid align="center">
         <FormControl className={clsx(classes.margin, classes.textField)} variant="filled">
           <InputLabel htmlFor="filled-adornment-password">Contraseña</InputLabel>
           <FilledInput
@@ -79,7 +80,7 @@ export default function InputPw() {
           />
         </FormControl>
        
-    
+        </Grid>
       </div>
     </div>
   );

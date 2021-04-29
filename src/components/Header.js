@@ -1,20 +1,22 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
 import puente from '../puente.png';
+
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: 0,
+    //display: 'flex',
+    //flexDirection: 'column',
+    
+    marginLeft: '-30px',
   },
 
   header: {
-    
-    marginTop: 'auto',
+    width: '100px',
+    //marginTop: 'auto',
     
   },
 }));
@@ -24,13 +26,15 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <CssBaseline />
+      <CssBaseline /> 
     
       <header className={classes.header}>
-        <Container maxWidth="sm">
-        <img src={puente} alt="Logo" />;
+        <Grid container >
+        <Grid item>
+        <img src={puente} alt="Logo" width='auto' />;
           
-        </Container>
+        </Grid>
+        </Grid>
       </header>
     </div>
   );

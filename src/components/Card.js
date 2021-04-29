@@ -18,6 +18,10 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
   root: {
     maxWidth: 450,
+    padding: 20,
+    height: '60vh',
+    width: 500,
+    margin:'-80px auto'
   },
   media: {
     height: 500,
@@ -41,11 +45,9 @@ export default function MediaCard() {
           <Grid item><InputDni /></Grid>
           <Grid item><InputPw /></Grid>
           </Grid>
-
-          <br /><Grid item xs={12} ><ButtonIngresar /> </Grid><br />
-
-          <Grid container alignItems="center">
-          <Grid item item xs={12} sm={6}><ButtonRegistrarse /></Grid> <Grid item item xs={12} sm={6}><ButtonAyuda2 /></Grid>
+          <Grid container margin="auto">
+          <Grid item xs={12} ><ButtonIngresar /> </Grid>
+          <Grid item item sm={6}><ButtonRegistrarse /></Grid> <Grid item item  sm={6}><ButtonAyuda2 /></Grid>
           </Grid>
 
         </CardContent>

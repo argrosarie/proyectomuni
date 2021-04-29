@@ -57,7 +57,8 @@ export default function InputPw() {
       
       <div>
        
-       <Grid align="center">
+       <Grid container >
+         <Grid item xs={12}>
         <FormControl className={clsx(classes.margin, classes.textField)} variant="filled">
           <InputLabel htmlFor="filled-adornment-password" fullWidth>Contraseña</InputLabel>
           <FilledInput
@@ -79,7 +80,7 @@ export default function InputPw() {
             }
           />
         </FormControl>
-       
+        </Grid>
         </Grid>
       </div>
     </div>

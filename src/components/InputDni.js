@@ -27,19 +27,16 @@ export default function InputDni() {
          
           <Grid item> 
           <TextField
-          id="standard-number"
+          id="filled-number"
           label="DNI"
-          type="number" fullWidth
-         InputLabelProps={{
-           shrink: true,
-          }
-        }
+          type="number"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          variant="filled"
         />
           
-            
-
-       {/* <TextField id="input-with-icon-grid" label="DNI" /> 
-            */}
+     
           </Grid>
           <Grid item> 
           <FaceIcon color ="primary" position="end" fontSize="large"  />

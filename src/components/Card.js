@@ -38,16 +38,17 @@ export default function MediaCard() {
       
       <CardActionArea>
         <CardContent style={{backgroundColor: "#2979ff"}} >
-        <Typography color='grey[500]' fontWeight={900} fontSize={50}>Portal de <strong>Datos Abiertos</strong></Typography>
+        <Typography >Portal de <strong>Datos Abiertos</strong></Typography>
         </CardContent>
-        <CardContent>
+        <CardContent >
         <Grid container alignItems="center">
           <Grid item><InputDni /></Grid>
           <Grid item><InputPw /></Grid>
           </Grid>
           <Grid container margin="auto">
           <Grid item xs={12} ><ButtonIngresar /> </Grid>
-          <Grid item item sm={6}><ButtonRegistrarse /></Grid> <Grid item item  sm={6}><ButtonAyuda2 /></Grid>
+
+          <Grid item sm={6}><ButtonRegistrarse /></Grid> <Grid item sm={6}><ButtonAyuda2 /></Grid>
           </Grid>
 
         </CardContent>

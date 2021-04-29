@@ -8,17 +8,18 @@ import puente from '../puente.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    //display: 'flex',
-    //flexDirection: 'column',
-    
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '5px',
+   margin: '0 auto 15px auto',
     marginLeft: '-30px',
   },
 
-  header: {
-    width: '100px',
+  //head: {
+    //width: '100px',
     //marginTop: 'auto',
     
-  },
+ // },
 }));
 
 export default function Header() {
@@ -31,7 +32,7 @@ export default function Header() {
       <header className={classes.header}>
         <Grid container >
         <Grid item>
-        <img src={puente} alt="Logo" width='auto' />;
+        <img src={puente} alt="Logo" width='100%' />;
           
         </Grid>
         </Grid>

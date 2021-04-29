@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 
 function ButtonRegistrarse() {
     return (
-      <div style={{ width: '80%' }}>
+      <div style={{ width: '95%' } }>
       <Grid align="center">
       <Button variant="contained"  color="primary" size="medium" fullWidth>
         Registrarse

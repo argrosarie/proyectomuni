@@ -28,7 +28,7 @@ theme.palette.success = theme.palette.augmentColor({
 
 function ButtonAyuda2() {
   return (
-    <div style={{ width: '100%' }, {margin: 0}}>
+    <div style={{ width: '95%' }}>
     <ThemeProvider theme={theme}>
      
       <Button variant="contained" color="success" size="medium" fullWidth>

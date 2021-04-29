@@ -4,14 +4,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import logo_muni from '../logo_muni.svg';
 import Divider from '@material-ui/core/Divider';
+import { Grid } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '5px',
-    margin: '50px'
+     display: 'flex',
+     flexDirection: 'column',
+     minHeight: '5px',
+    margin: '120px auto 15px auto'
+ 
+  
   },
   main: {
     //marginTop: theme.spacing(8),
@@ -33,10 +36,12 @@ export default function Footer() {
     
       <footer className={classes.footer}>
       <Divider />
-        <Container maxWidth="sm">
-        <img src={logo_muni} alt="Logo" width="40%" height="100px" align="center"/>;
-          
-        </Container>
+      <br />
+        <Grid align="center">
+       
+        <img src={logo_muni} alt="Logo" width="40%" height="70px" align="center"/>;
+        </Grid>
+        
       </footer>
     </div>
   );

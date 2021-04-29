@@ -11,9 +11,10 @@ import InputDni from './InputDni';
 import InputPw from './InputPw';
 import ButtonIngresar from './ButtonIngresar';
 import ButtonRegistrarse from './ButtonRegistrarse';
-import ButtonAyuda from './ButtonAyuda';
 import ButtonAyuda2 from './ButtonAyuda2';
 import Grid from '@material-ui/core/Grid';
+
+
 
 const useStyles = makeStyles({
   root: {
@@ -41,7 +42,7 @@ export default function MediaCard() {
         <Typography >Portal de <strong>Datos Abiertos</strong></Typography>
         </CardContent>
         <CardContent >
-        <Grid container alignItems="center">
+          <Grid container alignItems="center">
           <Grid item><InputDni /></Grid>
           <Grid item><InputPw /></Grid>
           </Grid>
@@ -50,6 +51,7 @@ export default function MediaCard() {
 
           <Grid item sm={6}><ButtonRegistrarse /></Grid> <Grid item sm={6}><ButtonAyuda2 /></Grid>
           </Grid>
+          
 
         </CardContent>
       </CardActionArea>

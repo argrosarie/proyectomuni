@@ -4,6 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 
 
+
+
 function ButtonIngresar() {
     return (
       <div style={{ width: '100%' }}>
@@ -13,7 +15,7 @@ function ButtonIngresar() {
         //item xs={12}
         >
       <Button variant="contained"  color="secondary" size="medium" fullWidth
-      >Ingresar</Button>
+      >ingresar</Button>
         </Grid>
       {/* </Grid> */}
       </Box>

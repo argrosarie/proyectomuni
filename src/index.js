@@ -7,7 +7,6 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './components/theme';
 import Header from './components/Header';
 import Footer from './components/Footer';
-//import Login from './components/Login';
 import Card from './components/Card';
 
 
